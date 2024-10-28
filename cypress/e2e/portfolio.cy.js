@@ -5,7 +5,7 @@ const portfolio = pom.get.portfolio
 
 describe('Portfolio Tests', () => {
     beforeEach(() => {
-        cy.visit('http://192.168.1.246:8080/')
+        cy.visit('http://localhost:8080')
         pom.get.nav.portfolio().click()
       })
     it('Portfolio titles are visible', () => {

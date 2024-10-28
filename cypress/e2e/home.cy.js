@@ -6,10 +6,10 @@ const home = pom.get.home;
 const portfolio = home.portfolio;
 const recentTransactions = home.recentTransactions;
 
-describe('Market Dashboard Tests', () => {
+describe('Home Tests', () => {
 
   beforeEach(() => {
-    cy.visit('http://192.168.1.246:8080/')
+    cy.visit('http://localhost:8080')
   })
 
   it('Pages are visible and clickable', () => {
@@ -18,11 +18,11 @@ describe('Market Dashboard Tests', () => {
     nav.transactions().click();
   })
 
-  it('Title is visible', ()=> {
+  it('Home - Title is visible', ()=> {
     home.title().isVisible('Home Title')
   })
 
-  it('Portfolio contains data', () => {
+  it('Home - Portfolio contains data', () => {
     cy.wait(3000)
     portfolio.title().isVisible('Portfolio Title')
     portfolio.totalHoldings().isVisible('total Holdings')
@@ -31,7 +31,7 @@ describe('Market Dashboard Tests', () => {
     portfolio.overAllReturnRate().isVisible('Overall Return Rate')
   })
 
-  it('Recent Transactions contains data', () => {
+  it('Home - Recent Transactions contains data', () => {
     cy.wait(3000)
     recentTransactions.title().isVisible('Recent Transactions Title')
     recentTransactions.transactions().should('have.length.greaterThan', 0)

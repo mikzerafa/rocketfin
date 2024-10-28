@@ -4,7 +4,7 @@ const transactions = pom.get.transactions;
 
 describe('Transaction tests', () => {
     beforeEach(()=> {
-        cy.visit('http://192.168.1.246:8080/')
+        cy.visit('http://localhost:8080')
         pom.get.nav.transactions().click()
         cy.wait(3000)
     })
