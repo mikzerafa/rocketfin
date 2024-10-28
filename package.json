@@ -1,0 +1,19 @@
+{
+  "name": "rocketfin",
+  "version": "1.0.0",
+  "description": "test for rocketFin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikzerafa/rocketfin.git"
+  },
+  "author": "mikhail zerafa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikzerafa/rocketfin/issues"
+  },
+  "homepage": "https://github.com/mikzerafa/rocketfin#readme"
+}
